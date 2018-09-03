@@ -1,15 +1,16 @@
 {
   "name": "cef_to_json",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simple utility to convert cef strings to json.",
   "main": "dist/cef.js",
   "scripts": {
     "start": "npm run lint && npm run test",
     "build": "babel src/cef.js --out-file dist/cef.js",
     "clean": "rimraf dist .coverage",
-    "lint": "eslint src",
+    "lint": "eslint src test",
     "test": "jest",
-    "npm-publish": "npm login && npm publish"
+    "npm-publish": "npm login && npm publish",
+    "lintfix": "eslint --fix src test"
   },
   "dependencies": {
     "express": "^4.16.3"

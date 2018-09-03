@@ -33,6 +33,7 @@ function toJson(cefOrig) {
   const re = /(\w*)=/g;
   const str = headers[7];
   const exts = [];
+  let m;
   /*eslint-disable*/
   while ((m = re.exec(str)) !== null) {
     exts.push({key:m[1], pos:m.index}); 
