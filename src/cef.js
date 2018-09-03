@@ -14,7 +14,11 @@ function toJson(cefOrig) {
   const cef = cefOrig.substring(cefVerPos).trim();
   const ret = {};
 
-  ret.cefversion = cef.charAt(4);
+  if (cefVerPos > 0) {
+    ret.headerPrefix = cefOrig.substring(0, cefVerPos).trim();
+  }
+
+  ret.cefVersion = cef.charAt(4);
   const headers = cef.split('|');
   if (headers.length < 7) {
     console.log('Cannot find a valid CEF header.');
@@ -22,8 +26,8 @@ function toJson(cefOrig) {
   }
 
   // extracting headers
-  [ret.vendor, ret.product, ret.deviceversion, ret.classid, ret.name, ret.severity] = headers
-    .slice(1, 7);
+  [ret.deviceVendor, ret.deviceProduct, ret.deviceVersion, ret.deviceEventClassId,
+    ret.name, ret.agentSeverity] = headers.slice(1, 7);
 
   if (headers.length === 7) {
     return ret;
@@ -36,7 +40,7 @@ function toJson(cefOrig) {
   let m;
   /*eslint-disable*/
   while ((m = re.exec(str)) !== null) {
-    exts.push({key:m[1], pos:m.index}); 
+    exts.push({key:m[1], pos:m.index});
   }
   /* eslint-enable */
 

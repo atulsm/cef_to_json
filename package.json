@@ -1,6 +1,6 @@
 {
   "name": "cef_to_json",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Simple utility to convert cef strings to json.",
   "main": "dist/cef.js",
   "scripts": {
