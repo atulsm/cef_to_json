@@ -1,6 +1,6 @@
 {
   "name": "cef_to_json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "High performing parser to convert cef strings to json. Supports both CEF:0 and CEF:1 versions.",
   "main": "dist/cef.js",
   "scripts": {
@@ -28,9 +28,9 @@
     "url": "git+https://github.com/atulsm/cef_to_json.git"
   },
   "keywords": [
-    "node",
-    "react",
-    "bootstrap"
+    "cef",
+    "javascript",
+    "json"
   ],
   "author": "Atul Soman",
   "license": "ISC",
