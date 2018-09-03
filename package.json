@@ -1,7 +1,7 @@
 {
   "name": "cef_to_json",
-  "version": "1.0.0",
-  "description": "Simple utility to convert cef strings to json.",
+  "version": "1.0.1",
+  "description": "High performing parser to convert cef strings to json. Supports both CEF:0 and CEF:1 versions.",
   "main": "dist/cef.js",
   "scripts": {
     "start": "npm run lint && npm run test",
