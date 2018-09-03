@@ -2,4 +2,5 @@ package-lock.json
 *.log
 .coverage
 .eslintcache
+.vscode
 node_modules

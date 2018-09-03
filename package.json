@@ -13,7 +13,6 @@
     "docker-build": "docker build -t node_react_bootstrap .",
     "docker-run": "docker run -p 4444:8080 node_react_bootstrap",
     "docker-push": "docker tag node_react_bootstrap atulsm/node_react_bootstrap && docker login --username=atulsm && docker push atulsm/node_react_bootstrap"
-
   },
   "dependencies": {
     "express": "^4.16.3"
