@@ -3,4 +3,5 @@ package-lock.json
 .coverage
 .eslintcache
 .vscode
+dist
 node_modules

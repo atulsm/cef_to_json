@@ -7,7 +7,7 @@
 function toJson(cefOrig) {
   const cefVerPos = cefOrig.indexOf('CEF:');
   if (cefVerPos < 0) {
-    console.log('Cannot find CEF version. Probably not a vliad CEF string');
+    console.log('Cannot find CEF version. Probably not a valid CEF string');
     return undefined;
   }
 
