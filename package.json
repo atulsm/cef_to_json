@@ -1,0 +1,42 @@
+{
+  "name": "cef_to_json",
+  "version": "1.1.1",
+  "description": "Bootstap app for node with all best practices",
+  "main": "api/sample/util.js",
+  "scripts": {
+    "start": "npm run lint && node api/sample/server.js",
+    "build": "npm run clean ",
+    "clean": "rimraf dist .coverage",
+    "lint": "eslint api",
+    "test": "jest",
+    "npm-publish": "npm login && npm publish",
+    "docker-build": "docker build -t node_react_bootstrap .",
+    "docker-run": "docker run -p 4444:8080 node_react_bootstrap",
+    "docker-push": "docker tag node_react_bootstrap atulsm/node_react_bootstrap && docker login --username=atulsm && docker push atulsm/node_react_bootstrap"
+
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atulsm/node_react_bootstrap.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "bootstrap"
+  ],
+  "author": "Atul Soman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atulsm/node_react_bootstrap/issues"
+  },
+  "homepage": "https://github.com/atulsm/node_react_bootstrap#readme"
+}
