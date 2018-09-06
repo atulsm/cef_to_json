@@ -11,16 +11,16 @@ console.log(cef.toJson(
 ## Sample Output:
 ```sh
 {
-	cefVersion: '0',
+  cefVersion: '0',
   deviceVendor: 'Security',
   deviceProduct: 'threatmanager2',
   deviceVersion: '1.0',
   deviceEventClassId: '100',
   name: 'worm successfully stopped',
   agentSeverity: '10',
-	src: '10.0.0.1',
-	dst: '2.1.2.2',
-	spt: '1232'
+  src: '10.0.0.1',
+  dst: '2.1.2.2',
+  spt: '1232'
 }
 ```
 
